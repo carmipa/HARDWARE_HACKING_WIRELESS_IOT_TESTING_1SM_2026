@@ -12,7 +12,7 @@
 
 > *"A Internet das Coisas não pode ser mais cara do que as próprias Coisas!"*
 
-Este repositório consolida o conteúdo da disciplina **Hardware Hacking, Wireless e IoT Testing**, reunindo fundamentos técnicos sobre energia, eletrônica básica, protocolos de comunicação (como MQTT) e o vasto ecossistema da Internet das Coisas (IoT). 
+Este repositório consolida o conteúdo da disciplina **Hardware Hacking, Wireless e IoT Testing**, reunindo fundamentos técnicos sobre energia, eletrônica básica, protocolos de comunicação (como MQTT) e o vasto ecossistema da Internet das Coisas (IoT).
 
 ---
 
@@ -30,9 +30,10 @@ Este repositório consolida o conteúdo da disciplina **Hardware Hacking, Wirele
 
 A disciplina capacita o desenvolvimento de projetos de hardware e software, trabalhando os desafios da internet das coisas, desde o planejamento elétrico até a execução na nuvem. A tecnologia de IoT não se resume apenas a "acender lâmpadas pelo smartphone"; o objetivo é desenhar objetos inteligentes capazes de coletar dados do ambiente, analisá-los e tomar decisões autônomas.
 
-### 🎯 Objetivos de Aprendizado:
+### 🎯 Objetivos de Aprendizado
+
 - 🔌 **Eletrônica Básica** e Medição
-- 🧠 **Microcontroladores** e Sensores 
+- 🧠 **Microcontroladores** e Sensores
 - 🌩️ **Integração Cloud** e Automação
 - 📡 **Protocolos** e Sistemas de Transporte TCP/IP
 
@@ -40,18 +41,20 @@ A disciplina capacita o desenvolvimento de projetos de hardware e software, trab
 
 ## 📡 Módulo 1: Conceitos de IoT
 
-Baseado no material de introdução à IoT, a democratização e o barateamento da tecnologia tornaram o ecossistema acessível para integrações mundiais. 
+Baseado no material de introdução à IoT, a democratização e o barateamento da tecnologia tornaram o ecossistema acessível para integrações mundiais.
 
 ### Evolução Histórica ⏱️
+
 - **RFID** (Radio Frequency Identification)
 - **WSN** (Wireless Sensor Network)
 - **Internet padrão** (TCP/IP)
 - **Redes Móveis:** 2G, 3G, 4G e 5G
 
 ### Principais Aplicações 🚀
+
 * 🏠 **Automação Residencial e Comercial**
-* 🌍 **Sensoriamento Ambiental**
-* 🚗 **Redes Veiculares e Cidades Inteligentes**
+- 🌍 **Sensoriamento Ambiental**
+- 🚗 **Redes Veiculares e Cidades Inteligentes**
 
 As topologias frequentemente adotam o padrão **Cliente-Servidor**, funcionando por meio de softwares clientes que fazem requisições para controle. O foco se mantém em construir sistemas confiáveis em ambientes hostis de difícil acesso.
 
@@ -61,7 +64,8 @@ As topologias frequentemente adotam o padrão **Cliente-Servidor**, funcionando 
 
 A **energia** atua como motor de toda nossa tecnologia. Ela se manifesta de formas muito variadas, como eventos **Magnéticos, Térmicos, Químicos e Luminosos**. Como postulado nas aulas: *"A energia nunca desaparece, apenas se transforma"*.
 
-### Eixos do Conhecimento Essencial:
+### Eixos do Conhecimento Essencial
+
 1. **Matéria e Átomos ⚛️:** Compreensão da estrutura que nos cerca. Formação de prótons, elétrons e íons resultantes do desequilíbrio atômico.
 2. **Condução Elétrica 🛤️:** A distinção física entre os materiais Condutores e os Isolantes.
 3. **Leis de Ohm 📐:** A clássica 1ª Lei de Ohm e a definição de Corrente Elétrica.
@@ -80,17 +84,17 @@ graph TD;
     classDef broker fill:#005c8a,stroke:#00aaff,stroke-width:2px,color:#fff;
     classDef app fill:#e67300,stroke:#ff9500,stroke-width:2px,color:#fff;
 
-    subgraph Dispositivos Físicos 🖲️
+    subgraph fisicos ["Dispositivos Físicos 🖲️"]
       A[Microcontrolador / Sensor]:::device -->|Lê Grandezas Físicas| B(Dados do Ambiente):::device
       C[Módulos de Atuação]:::device -->|Executa Ação| D(Relés / Motores):::device
     end
 
-    subgraph Infraestrutura / Comunicação 🌐
+    subgraph infra ["Infraestrutura / Comunicação 🌐"]
       A -->|Publica Dados MQTT| E((Broker MQTT / Servidor)):::broker
       E -->|Envia Comandos MQTT| C
     end
 
-    subgraph Aplicações Clientes 💻
+    subgraph clientes ["Aplicações Clientes 💻"]
       E -.->|Assina Tópico| F[App Mobile]:::app
       E -.->|Dashboard AWS/Cloud| G[Sistema Web]:::app
       F -.->|Envia Ação| E
@@ -103,9 +107,9 @@ graph TD;
 
 ## 🎓 Professor e DNA FIAP
 
-* 👨‍🏫 **Marcelo Fernando Morgantini (Morgs):** [prof.morgantini@fiap.com.br](mailto:prof.morgantini@fiap.com.br)
-* 🎓 **Formação:** Graduado em Redes de Computadores / MBA em Gestão Corporativa de TI.
-* 💼 **Atuação:** Tribunal de Justiça de São Paulo / Professor FIAP especializado em Cyber Security, Cloud Computing e Engenharia Mecatrônica.
+- 👨‍🏫 **Marcelo Fernando Morgantini (Morgs):** [prof.morgantini@fiap.com.br](mailto:prof.morgantini@fiap.com.br)
+- 🎓 **Formação:** Graduado em Redes de Computadores / MBA em Gestão Corporativa de TI.
+- 💼 **Atuação:** Tribunal de Justiça de São Paulo / Professor FIAP especializado em Cyber Security, Cloud Computing e Engenharia Mecatrônica.
 
 ---
 <p align="center">
